@@ -24,8 +24,8 @@ impl<'a> GetCollectionsSuggestionsResultsRequest<'a> {
             }
         }
     }
-    pub fn query(mut self, query: String) -> Self {
-        self.query = Some(query);
+    pub fn query(mut self, query: &str) -> Self {
+        self.query = Some(query.to_owned());
         self
     }
 }
@@ -86,8 +86,8 @@ impl<'a> PostRefreshRequest<'a> {
             }
         }
     }
-    pub fn chain_id(mut self, chain_id: String) -> Self {
-        self.chain_id = Some(chain_id);
+    pub fn chain_id(mut self, chain_id: &str) -> Self {
+        self.chain_id = Some(chain_id.to_owned());
         self
     }
     pub fn media(mut self, media: bool) -> Self {
@@ -118,8 +118,8 @@ impl<'a> GetTokensSuggestionsResultsRequest<'a> {
             }
         }
     }
-    pub fn query(mut self, query: String) -> Self {
-        self.query = Some(query);
+    pub fn query(mut self, query: &str) -> Self {
+        self.query = Some(query.to_owned());
         self
     }
 }
@@ -166,8 +166,8 @@ impl<'a> GetWalletsSuggestionsResultsRequest<'a> {
             }
         }
     }
-    pub fn query(mut self, query: String) -> Self {
-        self.query = Some(query);
+    pub fn query(mut self, query: &str) -> Self {
+        self.query = Some(query.to_owned());
         self
     }
 }
@@ -243,8 +243,8 @@ impl<'a> GetCollectionRequest<'a> {
             }
         }
     }
-    pub fn chain_id(mut self, chain_id: String) -> Self {
-        self.chain_id = Some(chain_id);
+    pub fn chain_id(mut self, chain_id: &str) -> Self {
+        self.chain_id = Some(chain_id.to_owned());
         self
     }
 }
@@ -288,12 +288,12 @@ impl<'a> GetContractTransactionHistoryRequest<'a> {
             }
         }
     }
-    pub fn cursor(mut self, cursor: String) -> Self {
-        self.cursor = Some(cursor);
+    pub fn cursor(mut self, cursor: &str) -> Self {
+        self.cursor = Some(cursor.to_owned());
         self
     }
-    pub fn chain_id(mut self, chain_id: String) -> Self {
-        self.chain_id = Some(chain_id);
+    pub fn chain_id(mut self, chain_id: &str) -> Self {
+        self.chain_id = Some(chain_id.to_owned());
         self
     }
     pub fn limit(mut self, limit: i64) -> Self {
@@ -332,8 +332,8 @@ impl<'a> GetSearchResultsRequest<'a> {
             }
         }
     }
-    pub fn cursor(mut self, cursor: String) -> Self {
-        self.cursor = Some(cursor);
+    pub fn cursor(mut self, cursor: &str) -> Self {
+        self.cursor = Some(cursor.to_owned());
         self
     }
     pub fn limit(mut self, limit: i64) -> Self {
@@ -364,8 +364,8 @@ impl<'a> GetSuggestionsResultsRequest<'a> {
             }
         }
     }
-    pub fn query(mut self, query: String) -> Self {
-        self.query = Some(query);
+    pub fn query(mut self, query: &str) -> Self {
+        self.query = Some(query.to_owned());
         self
     }
 }
@@ -400,8 +400,8 @@ impl<'a> GetContractTokensByContractAndIdRequest<'a> {
             }
         }
     }
-    pub fn chain_id(mut self, chain_id: String) -> Self {
-        self.chain_id = Some(chain_id);
+    pub fn chain_id(mut self, chain_id: &str) -> Self {
+        self.chain_id = Some(chain_id.to_owned());
         self
     }
     pub fn limit(mut self, limit: i64) -> Self {
@@ -441,8 +441,8 @@ impl<'a> GetErc20MetadataRequest<'a> {
             }
         }
     }
-    pub fn chain_id(mut self, chain_id: String) -> Self {
-        self.chain_id = Some(chain_id);
+    pub fn chain_id(mut self, chain_id: &str) -> Self {
+        self.chain_id = Some(chain_id.to_owned());
         self
     }
 }
@@ -481,16 +481,16 @@ impl<'a> GetTokensBySearchQueryRequest<'a> {
             }
         }
     }
-    pub fn chain_id(mut self, chain_id: String) -> Self {
-        self.chain_id = Some(chain_id);
+    pub fn chain_id(mut self, chain_id: &str) -> Self {
+        self.chain_id = Some(chain_id.to_owned());
         self
     }
     pub fn limit(mut self, limit: i64) -> Self {
         self.limit = Some(limit);
         self
     }
-    pub fn cursor(mut self, cursor: String) -> Self {
-        self.cursor = Some(cursor);
+    pub fn cursor(mut self, cursor: &str) -> Self {
+        self.cursor = Some(cursor.to_owned());
         self
     }
 }
@@ -530,8 +530,8 @@ impl<'a> GetContractTokensRequest<'a> {
             }
         }
     }
-    pub fn chain_id(mut self, chain_id: String) -> Self {
-        self.chain_id = Some(chain_id);
+    pub fn chain_id(mut self, chain_id: &str) -> Self {
+        self.chain_id = Some(chain_id.to_owned());
         self
     }
     pub fn limit(mut self, limit: i64) -> Self {
@@ -572,8 +572,8 @@ impl<'a> GetTokenRequest<'a> {
             }
         }
     }
-    pub fn chain_id(mut self, chain_id: String) -> Self {
-        self.chain_id = Some(chain_id);
+    pub fn chain_id(mut self, chain_id: &str) -> Self {
+        self.chain_id = Some(chain_id.to_owned());
         self
     }
 }
@@ -614,8 +614,8 @@ impl<'a> GetTokenTransfersRequest<'a> {
             }
         }
     }
-    pub fn chain_id(mut self, chain_id: String) -> Self {
-        self.chain_id = Some(chain_id);
+    pub fn chain_id(mut self, chain_id: &str) -> Self {
+        self.chain_id = Some(chain_id.to_owned());
         self
     }
     pub fn limit(mut self, limit: i64) -> Self {
@@ -655,8 +655,8 @@ impl<'a> GetWalletRequest<'a> {
             }
         }
     }
-    pub fn chain_id(mut self, chain_id: String) -> Self {
-        self.chain_id = Some(chain_id);
+    pub fn chain_id(mut self, chain_id: &str) -> Self {
+        self.chain_id = Some(chain_id.to_owned());
         self
     }
 }
@@ -729,8 +729,8 @@ impl<'a> GetWalletBalancesRequest<'a> {
         self.limit = Some(limit);
         self
     }
-    pub fn chain_id(mut self, chain_id: String) -> Self {
-        self.chain_id = Some(chain_id);
+    pub fn chain_id(mut self, chain_id: &str) -> Self {
+        self.chain_id = Some(chain_id.to_owned());
         self
     }
 }
@@ -768,8 +768,8 @@ impl<'a> GetContractGateRequest<'a> {
             }
         }
     }
-    pub fn chain_id(mut self, chain_id: String) -> Self {
-        self.chain_id = Some(chain_id);
+    pub fn chain_id(mut self, chain_id: &str) -> Self {
+        self.chain_id = Some(chain_id.to_owned());
         self
     }
 }
@@ -808,8 +808,8 @@ impl<'a> GetTokenGateRequest<'a> {
             }
         }
     }
-    pub fn chain_id(mut self, chain_id: String) -> Self {
-        self.chain_id = Some(chain_id);
+    pub fn chain_id(mut self, chain_id: &str) -> Self {
+        self.chain_id = Some(chain_id.to_owned());
         self
     }
 }
@@ -853,12 +853,12 @@ impl<'a> GetWalletMintsRequest<'a> {
             }
         }
     }
-    pub fn chain_id(mut self, chain_id: String) -> Self {
-        self.chain_id = Some(chain_id);
+    pub fn chain_id(mut self, chain_id: &str) -> Self {
+        self.chain_id = Some(chain_id.to_owned());
         self
     }
-    pub fn cursor(mut self, cursor: String) -> Self {
-        self.cursor = Some(cursor);
+    pub fn cursor(mut self, cursor: &str) -> Self {
+        self.cursor = Some(cursor.to_owned());
         self
     }
     pub fn limit(mut self, limit: i64) -> Self {
@@ -906,12 +906,12 @@ impl<'a> GetSoldTokensRequest<'a> {
             }
         }
     }
-    pub fn chain_id(mut self, chain_id: String) -> Self {
-        self.chain_id = Some(chain_id);
+    pub fn chain_id(mut self, chain_id: &str) -> Self {
+        self.chain_id = Some(chain_id.to_owned());
         self
     }
-    pub fn cursor(mut self, cursor: String) -> Self {
-        self.cursor = Some(cursor);
+    pub fn cursor(mut self, cursor: &str) -> Self {
+        self.cursor = Some(cursor.to_owned());
         self
     }
     pub fn limit(mut self, limit: i64) -> Self {
@@ -967,12 +967,12 @@ impl<'a> GetWalletTokensRequest<'a> {
         self.filter_airdrops = Some(filter_airdrops);
         self
     }
-    pub fn cursor(mut self, cursor: String) -> Self {
-        self.cursor = Some(cursor);
+    pub fn cursor(mut self, cursor: &str) -> Self {
+        self.cursor = Some(cursor.to_owned());
         self
     }
-    pub fn chain_id(mut self, chain_id: String) -> Self {
-        self.chain_id = Some(chain_id);
+    pub fn chain_id(mut self, chain_id: &str) -> Self {
+        self.chain_id = Some(chain_id.to_owned());
         self
     }
     pub fn limit(mut self, limit: i64) -> Self {
@@ -1024,20 +1024,20 @@ impl<'a> GetWalletTransactionsRequest<'a> {
             }
         }
     }
-    pub fn cursor(mut self, cursor: String) -> Self {
-        self.cursor = Some(cursor);
+    pub fn cursor(mut self, cursor: &str) -> Self {
+        self.cursor = Some(cursor.to_owned());
         self
     }
     pub fn limit(mut self, limit: i64) -> Self {
         self.limit = Some(limit);
         self
     }
-    pub fn chain_id(mut self, chain_id: String) -> Self {
-        self.chain_id = Some(chain_id);
+    pub fn chain_id(mut self, chain_id: &str) -> Self {
+        self.chain_id = Some(chain_id.to_owned());
         self
     }
-    pub fn token_type(mut self, token_type: String) -> Self {
-        self.token_type = Some(token_type);
+    pub fn token_type(mut self, token_type: &str) -> Self {
+        self.token_type = Some(token_type.to_owned());
         self
     }
 }

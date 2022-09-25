@@ -1,4 +1,5 @@
 use nxyz::NxyzClient;
+use nxyz::model::*;
 #[tokio::main]
 async fn main() {
     let client = NxyzClient::from_env();
@@ -6,6 +7,8 @@ async fn main() {
     let token_id = "your token id";
     let response = client
         .get_token_transfers(contract_address, token_id)
+        .chain_id("your chain id")
+        .limit(1)
         .send()
         .await
         .unwrap();

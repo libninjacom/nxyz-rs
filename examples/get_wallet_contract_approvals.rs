@@ -1,4 +1,5 @@
 use nxyz::NxyzClient;
+use nxyz::model::*;
 #[tokio::main]
 async fn main() {
     let client = NxyzClient::from_env();

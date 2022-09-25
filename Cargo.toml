@@ -34,3 +34,219 @@ proc-macro = false
 edition = "2021"
 crate-type = ["rlib"]
 required-features = []
+
+[[example]]
+path = "examples/get_blockchains.rs"
+name = "get_blockchains"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_collection.rs"
+name = "get_collection"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_collections_suggestions_results.rs"
+name = "get_collections_suggestions_results"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_contract_gate.rs"
+name = "get_contract_gate"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_contract_tokens.rs"
+name = "get_contract_tokens"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_contract_tokens_by_contract_and_id.rs"
+name = "get_contract_tokens_by_contract_and_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_contract_transaction_history.rs"
+name = "get_contract_transaction_history"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_erc_20_metadata.rs"
+name = "get_erc_20_metadata"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_search_results.rs"
+name = "get_search_results"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_sold_tokens.rs"
+name = "get_sold_tokens"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_suggestions_results.rs"
+name = "get_suggestions_results"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_token.rs"
+name = "get_token"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_token_gate.rs"
+name = "get_token_gate"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_token_transfers.rs"
+name = "get_token_transfers"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_tokens_by_search_query.rs"
+name = "get_tokens_by_search_query"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_tokens_suggestions_results.rs"
+name = "get_tokens_suggestions_results"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_top_collections.rs"
+name = "get_top_collections"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_top_tokens.rs"
+name = "get_top_tokens"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_top_wallets.rs"
+name = "get_top_wallets"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_wallet.rs"
+name = "get_wallet"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_wallet_balances.rs"
+name = "get_wallet_balances"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_wallet_contract_approvals.rs"
+name = "get_wallet_contract_approvals"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_wallet_mints.rs"
+name = "get_wallet_mints"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_wallet_tokens.rs"
+name = "get_wallet_tokens"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_wallet_transactions.rs"
+name = "get_wallet_transactions"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_wallets_suggestions_results.rs"
+name = "get_wallets_suggestions_results"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_refresh.rs"
+name = "post_refresh"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []

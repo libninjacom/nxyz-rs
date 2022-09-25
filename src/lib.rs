@@ -9,7 +9,7 @@ use crate::model::*;
 
 pub struct NxyzClient {
     pub(crate) client: httpclient::Client,
-    authentication: Option<NxyzAuthenticator>,
+    authentication: Option<NxyzAuthentication>,
 }
 impl NxyzClient {
     pub fn from_env() -> Self {
@@ -24,7 +24,7 @@ impl NxyzClient {
         let authentication = None;
         Self { client, authentication }
     }
-    pub fn with_authentication(mut self, authentication: NxyzAuthenticator) -> Self {
+    pub fn with_authentication(mut self, authentication: NxyzAuthentication) -> Self {
         self.authentication = Some(authentication);
         self
     }
@@ -34,7 +34,7 @@ impl NxyzClient {
     ) -> httpclient::RequestBuilder<'a> {
         if let Some(ref authentication) = self.authentication {
             match authentication {
-                NxyzAuthenticator::Apikey { apikey } => {
+                NxyzAuthentication::Apikey { apikey } => {
                     r = r.push_query("apikey", apikey);
                 }
             }
@@ -395,10 +395,10 @@ Returns transactions related to a wallet.*/
         }
     }
 }
-pub enum NxyzAuthenticator {
+pub enum NxyzAuthentication {
     Apikey { apikey: String },
 }
-impl NxyzAuthenticator {
+impl NxyzAuthentication {
     pub fn from_env() -> Self {
         Self::Apikey {
             apikey: std::env::var("NXYZ_APIKEY")
